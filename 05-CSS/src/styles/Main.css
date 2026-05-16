@@ -1,0 +1,122 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.left {
+    background-color: #fee5c4;
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.box {
+    background-color: rgb(255, 197, 7);
+    height: 450px;
+    width: 560px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+    animation: boxPop 1s ease-out;
+}
+
+/* BOX ANIMATION */
+@keyframes boxPop {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+.box h1 {
+    margin: 5px;
+    font-size: 48px;
+}
+
+.box h3 {
+    margin-left: 30px;
+    font-size: 28px;
+
+}
+
+.box p {
+    margin: 5px 0 0 30px;
+    font-size: 18px;
+}
+
+.box2 {
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 30px;
+}
+
+.mern {
+    background-color: #fee5c4;
+    margin-left: 30px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+
+}
+
+.dsa {
+    background-color: #fee5c4;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.comm {
+    background-color: #fee5c4;
+    width: 190px;
+    border-radius: 10px;
+}
+
+.left img {
+    width: 450px;
+    height: 180px;
+    object-fit: cover;
+    margin: 20px 0 0 30px;
+    border-radius: 10px;
+    box-shadow: 0px, 10px 20px, rgba(0, 0, 0, 0.9);
+    transition: transform 0.5s ease;
+
+}
+
+.left img :hover {
+    transform: scale(0.4);
+}
+
+
+
+
+
+.right {
+    background-color: rgb(240, 240, 240);
+    height: 90vh;
+    width: 50%;
+
+
+}
+
+.right img {
+    height: 90vh;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0px, 2px, 17px, rgba(0, 0, 0, 0.5);
+}
